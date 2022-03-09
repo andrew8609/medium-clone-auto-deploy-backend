@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "root",
+    "password": "password",
+    "operatorsAliases": false,
+    "database": "medium",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "Qazxsw#2019",
+    "operatorsAliases": false,
+    "database": "medium",
+    "host": "3.83.44.97",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "sql6476800",
+    "password": "B49rI78UXR",
+    "operatorsAliases": false,
+    "database": "sql6476800",
+    "host": "sql6.freemysqlhosting.net",
+    "dialect": "mysql"
+  }
+}

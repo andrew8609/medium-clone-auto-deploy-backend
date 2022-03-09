@@ -1,0 +1,42 @@
+{
+  "name": "express-mysql-rest",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "start:dev": "nodemon --watch .env --watch app.js --watch bin ./bin/www --watch controllers --watch db --watch routes --watch core --watch config",
+    "db": "sequelize init",
+    "db:migrate": "sequelize db:migrate",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "cloudinary": "^1.28.1",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.4",
+    "debug": "~2.6.9",
+    "dotenv": "^5.0.1",
+    "ejs": "^3.1.6",
+    "express": "~4.16.0",
+    "express-session": "^1.17.2",
+    "http-errors": "~1.6.2",
+    "imgbb-uploader": "^1.3.5",
+    "jade": "~1.11.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "~1.9.0",
+    "multer": "^1.4.4",
+    "multer-storage-cloudinary": "^4.0.0",
+    "mysql2": "^1.5.3",
+    "nodemailer": "^6.7.2",
+    "passport": "^0.5.2",
+    "passport-google-oauth2": "^0.2.0",
+    "sequelize": "^4.44.4",
+    "sequelize-hierarchy": "^2.0.4",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.17.5"
+  }
+}
