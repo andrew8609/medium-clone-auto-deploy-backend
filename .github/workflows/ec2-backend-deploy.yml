@@ -31,5 +31,4 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           port: "22"
           script: |
-              sudo ln -s "$NVM_DIR/versions/node/$(nvm version)/bin/pm2" "/usr/local/bin/pm2"
-              pm2 restart backend
+              /usr/local/bin/pm2 restart backend
