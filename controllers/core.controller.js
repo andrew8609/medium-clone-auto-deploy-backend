@@ -104,17 +104,17 @@ module.exports = {
 async getHashtags(req, res) {
     const limit=10, offset=0;
     await  Hashtag.findAll({
-            order: [['used_number', 'DESC']],
-            limit, offset
-           })
-           .then(async hashtags => {
-                return res.status(200).send(hashtags);
-           })
-           .catch(err => {
-               res.status(500).send({
-                   message:
-                   err.message || "Some error occurred while retrieving tutorials."
-               });
+        order: [['used_number', 'DESC']],
+        limit, offset
+       })
+       .then(async hashtags => {
+            return res.status(200).send(hashtags);
+       })
+       .catch(err => {
+           res.status(500).send({
+               message:
+               err.message || "Some error occurred while retrieving tutorials."
            });
+       });
    },
 }
