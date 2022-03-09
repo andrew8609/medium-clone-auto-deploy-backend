@@ -18,7 +18,6 @@ module.exports = {
     async searchEngine(req, res) {
         
         if (req.query.searchType == "hashtags") {
-
             Hashtag.findAll({
                where: {hashtag_name: { [Op.like]: '%'+req.query.searchTerm+'%' }},
                attributes: ["id", "hashtag_name", "used_number"],
