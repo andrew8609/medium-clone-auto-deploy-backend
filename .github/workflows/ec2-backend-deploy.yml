@@ -33,4 +33,5 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           port: "22"
           script: |
+              exec bash
               /usr/local/bin/pm2 restart backend
