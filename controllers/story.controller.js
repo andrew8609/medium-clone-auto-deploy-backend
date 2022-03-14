@@ -59,8 +59,7 @@ module.exports = {
                 content: req.body.story.content,
                 hashtag: req.body.story.hashtag
             }}
-        );
-       
+        );  
         
     },
 
