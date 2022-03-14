@@ -22,7 +22,6 @@ passport.use(new GoogleStrategy(
     request.picture = profile.picture;
     
     var user = profile;
-
     done(null, user);
   }
 ));
