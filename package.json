@@ -32,7 +32,7 @@
     "sequelize": "^4.44.4",
     "sequelize-hierarchy": "^2.0.4",
     "uuid": "^8.3.2",
-    "pm2": "^8.5.2"
+    "pm2": "^8.5.4"
   },
   "devDependencies": {
     "chai": "^4.1.2",
