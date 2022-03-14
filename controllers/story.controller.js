@@ -60,7 +60,6 @@ module.exports = {
                 hashtag: req.body.story.hashtag
             }}
         );  
-        
     },
 
     async updateStory(req, res) {
