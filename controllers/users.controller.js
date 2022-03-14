@@ -33,7 +33,6 @@ module.exports = {
             .catch( error => {
                 console.log(error);
             });
-
     },
 
     async updateMyProfile(req, res) {    
