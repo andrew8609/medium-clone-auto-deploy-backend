@@ -32,6 +32,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           port: "22"
-          script: |
-              exec bash
-              /usr/local/bin/pm2 restart backend
+          # script: |
+          #     #exec bash
+          #     /usr/local/bin/pm2 restart backend
+          script: nohup npm run start &
