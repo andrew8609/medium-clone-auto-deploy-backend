@@ -8,4 +8,3 @@ module.exports = {
     BACKEND_DOMAIN: "http://happybirthdayhub.com",
     FRONTEND_DOMAIN: "http://happybirthdayhub.com"
   };
-  
