@@ -242,8 +242,7 @@ module.exports = {
                         return res.status(200).send({story, ...{isFollowing: false}});
                     } else {
                         return res.status(200).send({story, ...{isFollowing: true}});
-                    }
-                    
+                    }     
                 })
                 .catch(err => {
                     res.status(500).send({message: err.message || "some error occured in getting followers."})
