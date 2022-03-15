@@ -33,5 +33,5 @@ jobs:
           port: "22"
           script: |
               #exec bash
-              /usr/local/bin/pm2 start npm -- start
+              /usr/local/bin/pm2 restart all
           #script: nohup npm run start &
