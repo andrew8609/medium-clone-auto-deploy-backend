@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Install npm dependencies
-        #run: npm install
+        run: npm install
         
       - name: Deploy to Server 1
         uses: easingthemes/ssh-deploy@main
@@ -34,7 +34,5 @@ jobs:
           port: "22"
           script: |
               #exec bash
-              pm2 start bin/www
-          #/usr/local/bin/pm2 delete /home/ubuntu/MEDIUM/auto-deploy-backend/bin/www 2> /dev/null || true &&  /usr/local/bin/pm2 start /home/ubuntu/MEDIUM/auto-deploy-backend/bin/www
-          #/usr/local/bin/pm2 restart /home/ubuntu/MEDIUM/auto-deploy-backend/bin/www
+              pm2 restart backend
           #script: nohup npm run start &
