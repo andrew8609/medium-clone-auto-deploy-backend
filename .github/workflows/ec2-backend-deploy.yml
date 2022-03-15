@@ -34,5 +34,5 @@ jobs:
           port: "22"
           script: |
               #exec bash
-              /usr/local/bin/pm2 restart backend
+              /usr/local/bin/pm2 restart /home/ubuntu/MEDIUM/auto-deploy-backend/bin/www
           #script: nohup npm run start &
