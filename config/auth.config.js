@@ -5,7 +5,7 @@ module.exports = {
   
     jwtExpiration: 6000,          // 1 minute
     jwtRefreshExpiration: 12000,  // 2 minutes
-    BACKEND_DOMAIN: "http://3.87.78.109:3000",
-    FRONTEND_DOMAIN: "http://3.87.78.109"
+    BACKEND_DOMAIN: "http://happybirthdayhub.com:3000",
+    FRONTEND_DOMAIN: "http://happybirthdayhub"
   };
   
