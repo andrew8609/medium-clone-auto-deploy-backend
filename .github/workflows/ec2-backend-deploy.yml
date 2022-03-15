@@ -34,5 +34,5 @@ jobs:
           port: "22"
           script: |
               #exec bash
-              nohup node bin/www &
+              /usr/local/bin/pm2 start npm -- start
           #script: nohup npm run start &
