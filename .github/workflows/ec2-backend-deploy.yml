@@ -34,5 +34,5 @@ jobs:
           port: "22"
           script: |
               #exec bash
-              /usr/local/bin/pm2 restart backend
+              /home/ubuntu/.nvm/versions/node/v17.7.1/bin/pm2
           #script: nohup npm run start &
