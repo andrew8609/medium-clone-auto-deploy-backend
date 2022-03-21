@@ -24,7 +24,7 @@ module.exports = (app) => {
   app.get('/login', function(req,res){  res.render('auth/login'); });
   
   
-  app.get('/google', (req, res, next) => {
+  app.get('/api/google', (req, res, next) => {
     const { requestType } = req.query
     const state = requestType
         ? Buffer.from(JSON.stringify({ requestType })).toString('base64') : undefined
@@ -32,7 +32,7 @@ module.exports = (app) => {
     authenticator(req, res, next)
 })
 
-app.get('/auth/google/callback', passport.authenticate('google'), authController.googleSignUpOrSignIn);
+app.get('/api/auth/google/callback', passport.authenticate('google'), authController.googleSignUpOrSignIn);
   
 }
 
