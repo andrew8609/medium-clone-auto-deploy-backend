@@ -13,7 +13,7 @@ passport.use(new GoogleStrategy(
   {
     clientID      : process.env.GOOGLE_CLIENT_ID,
     clientSecret  : process.env.GOOGLE_SECRET,
-    callbackURL   : `${config.BACKEND_DOMAIN}/auth/google/callback`,
+    callbackURL   : `${config.BACKEND_DOMAIN}/api/auth/google/callback`,
     passReqToCallback   : true
   }, function(request, accessToken, refreshToken, profile, done){
     
