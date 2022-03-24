@@ -29,6 +29,7 @@
     "nodemailer": "^6.7.2",
     "passport": "^0.5.2",
     "passport-google-oauth2": "^0.2.0",
+    "request-promise": "^4.2.6",
     "sequelize": "^4.44.4",
     "sequelize-hierarchy": "^2.0.4",
     "uuid": "^8.3.2"
