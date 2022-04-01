@@ -30,6 +30,4 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           port: "22"
-          script: |
-                  chmod +x shell.sh
-                  sh shell.sh
+          script: sh shell.sh
