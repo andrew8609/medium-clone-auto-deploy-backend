@@ -8,11 +8,11 @@
     "dialect": "mysql"
   },
   "test": {
-    "username": "medium-user",
+    "username": "azureuser",
     "password": "Qazxsw#2019",
     "operatorsAliases": false,
     "database": "medium",
-    "host": "3.87.78.109",
+    "host": "20.232.176.10",
     "dialect": "mysql"
   },
   "production": {

@@ -31,5 +31,5 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           port: "22"
-          script: sh /home/ubuntu/MEDIUM/auto-deploy-backend/shell.sh
+          script: sh /home/azureuser/MEDIUM/auto-deploy-backend/shell.sh
           #script: nohup npm run start &
