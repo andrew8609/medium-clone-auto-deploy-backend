@@ -30,4 +30,5 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           port: "22"
-          script: sudo sh /home/azureuser/VUE-MEDIUM/medium-backend/shell.sh
+          script: chmod +x ./pm2_runner.sh 
+                  sudo sh /home/azureuser/VUE-MEDIUM/medium-backend/shell.sh
