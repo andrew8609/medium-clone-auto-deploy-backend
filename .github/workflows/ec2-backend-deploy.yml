@@ -33,4 +33,3 @@ jobs:
           script: |
                   chmod +x /home/azureuser/VUE-MEDIUM/medium-backend/shell.sh
                   sh /home/azureuser/VUE-MEDIUM/medium-backend/shell.sh
-                  
