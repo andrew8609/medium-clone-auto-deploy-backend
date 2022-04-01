@@ -31,4 +31,3 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           port: "22"
           script: sh /home/azureuser/VUE-MEDIUM/medium-backend/shell.sh
-          #script: nohup npm run start &
