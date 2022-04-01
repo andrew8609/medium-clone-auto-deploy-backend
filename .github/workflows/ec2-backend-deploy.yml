@@ -30,4 +30,4 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           port: "22"
-          script: sh /home/azureuser/VUE-MEDIUM/medium-backend/shell.sh
+          script: sudo sh /home/azureuser/VUE-MEDIUM/medium-backend/shell.sh
