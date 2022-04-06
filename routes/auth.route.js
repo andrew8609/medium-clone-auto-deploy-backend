@@ -15,7 +15,7 @@ module.exports = (app) => {
     next();
   });
 
-  app.post('/api/auth/signUpByEmail', [recaptcha.verifyRecaptcha], authController.signUpByEmail);
+  app.post('/api/auth/signUpByEmail', authController.signUpByEmail); //[recaptcha.verifyRecaptcha], authController.signUpByEmail);
   app.post('/api/auth/confirmSignupByToken', authController.confirmSignupByToken); 
   app.post("/api/auth/refreshToken", authController.refreshToken);
   app.get("/api/auth/checkAccessToken", authController.checkAccessToken);
