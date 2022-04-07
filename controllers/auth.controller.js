@@ -139,9 +139,9 @@ module.exports = {
             if (err) {
                 
                 if(err instanceof jwt.TokenExpiredError){
-                    res.status(200).send({ message: "Unauthorized! Access Token was expired!" });
+                    res.status(400).send({ message: "Unauthorized! Access Token was expired!" });
                 }
-                res.status(200).send({ message: err });
+                res.status(400).send({ message: err });
             }
             
             User.findOne({
