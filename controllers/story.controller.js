@@ -168,7 +168,7 @@ module.exports = {
 
             await Story.findAndCountAll({ 
                 where: condition, 
-                attributes: ['id', 'title', 'content_pure', 'content',' created_at'],
+                attributes: ['id', 'title', 'content_pure', 'content', 'created_at'],
                 order: [
                     ['clap_number', 'DESC']
                 ],
