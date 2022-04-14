@@ -142,7 +142,7 @@ module.exports = {
         const { limit, offset } = Pagination.getPagination(page, size);
         if(type=="all") {
             await Story.findAndCountAll({ 
-                attributes: ['id', 'title', 'content', 'CONVERT(content_pure USING utf8)','created_at'],
+                attributes: ['id', 'title', 'content', 'content_pure','created_at'],
                 include: [{
                     model: User,
                     attributes: ['id', 'photo_url', 'bio_note', 'username']
