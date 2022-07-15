@@ -1,7 +1,4 @@
-# express-mysql-rest
-Boilerplate for building the rest api with sequelize and mysql using express js. the repository will contains crud operation with mysql database using sequelize ORM.
-
-For front end development purpose we need to example api server to design site or for practice of ```angular``` and ```react js``` or ```vue.js``` or other front end framework. we need to primary backend server. the repository is created for who are learning the server side development with node js and using as example api server for front and development. we can also use this for our production development purpose also. 
+# Expressjs Medium.com clone Backend Repository. CI/CD is implemented using Github Action
 
 ## Prerequisite
  1. Express JS
